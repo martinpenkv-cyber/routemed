@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RouteMed | Your Route to Medicine</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #18324a;
+            background: #f7fbfd;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: white;
+            border-bottom: 1px solid #e5eef2;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #167d8d;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #18324a;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #167d8d;
+        }
+
+        /* HERO */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: #e9f7f8;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 25px auto;
+            font-size: 19px;
+            color: #526775;
+        }
+
+        .button {
+            display: inline-block;
+            background: #167d8d;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background: #126673;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 45px;
+        }
+
+        /* CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #e1ebef;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-icon {
+            font-size: 35px;
+        }
+
+        .card h3 {
+            margin: 15px 0 10px;
+        }
+
+        .card p {
+            color: #627582;
+        }
+
+        /* YEAR GROUPS */
+        .years {
+            background: white;
+        }
+
+        .year-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .year {
+            padding: 20px 30px;
+            border: 2px solid #167d8d;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #167d8d;
+            font-weight: bold;
+            background: white;
+        }
+
+        .year:hover {
+            background: #167d8d;
+            color: white;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 35px;
+            background: #18324a;
+            color: white;
+        }
+
+        /* MOBILE */
+        @media (max-width: 800px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 50px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">RouteMed</div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#journey">Your Journey</a></li>
+            <li><a href="#learn">Learn</a></li>
+            <li><a href="#opportunities">Opportunities</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- HERO -->
+    <header class="hero">
+
+        <h1>Your Route to Medicine Starts Here</h1>
+
+        <p>
+            Free guidance, educational resources and opportunities
+            for secondary school students interested in medicine.
+        </p>
+
+        <a href="#journey" class="button">
+            Start Your Journey
+        </a>
+
+    </header>
+
+
+    <!-- FEATURES -->
+    <section id="learn">
+
+        <h2 class="section-title">
+            What can we help with?
+        </h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="card-icon">🧭</div>
+
+                <h3>Your Journey</h3>
+
+                <p>
+                    Step-by-step guidance from secondary school
+                    through to applying for medicine.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon">📚</div>
+
+                <h3>Learn Medicine</h3>
+
+                <p>
+                    Explore biology, anatomy and healthcare
+                    through simple educational resources.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon">📝</div>
+
+                <h3>Applications</h3>
+
+                <p>
+                    Understand the different stages involved
+                    in applying to medical school.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon">🌍</div>
+
+                <h3>Opportunities</h3>
+
+                <p>
+                    Discover free programmes, outreach schemes
+                    and educational opportunities.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- YEAR GROUPS -->
+    <section class="years" id="journey">
+
+        <h2 class="section-title">
+            Where are you now?
+        </h2>
+
+        <div class="year-buttons">
+
+            <a href="#" class="year">
+                Years 7–9
+            </a>
+
+            <a href="#" class="year">
+                Years 10–11
+            </a>
+
+            <a href="#" class="year">
+                Years 12–13
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- MISSION -->
+    <section id="opportunities">
+
+        <h2 class="section-title">
+            Medicine should be accessible to everyone.
+        </h2>
+
+        <p style="text-align:center; max-width:700px; margin:auto;">
+            RouteMed aims to make information about medicine,
+            university applications and educational opportunities
+            easier to find, understand and access.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>RouteMed</h3>
+
+        <p>
+            Making the route to medicine clearer for all.
+        </p>
+
+    </footer>
+
+</body>
+</html>
